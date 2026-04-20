@@ -1,0 +1,8 @@
+cd cyber-playbook/soc-alert-triage/app
+pip install -r requirements.txt
+
+  uvicorn api:app --reload --port 8004
+
+  streamlit run main.py
+
+  http://localhost:8501
