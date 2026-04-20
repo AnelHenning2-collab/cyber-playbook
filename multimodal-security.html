@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Multimodal Security Assistant | Cyber AI Project Playbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; line-height: 1.6; background:#0b1020; color:#f5f5f5; }
+    header, footer { background:#050814; padding:1.5rem 2rem; }
+    main { padding:2rem; max-width: 1000px; margin: 0 auto; }
+    h1, h2, h3 { color:#fdfdfd; }
+    a { color:#7fd0ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    nav a { margin-right:1rem; font-size:0.9rem; }
+    .section-label { font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:#9ca3af; margin-bottom:0.25rem; }
+    .card { background:#111729; border-radius:0.75rem; padding:1.25rem 1.5rem; border:1px solid #1f2937; margin-bottom:1.5rem; }
+    .grid { display:grid; gap:1.5rem; }
+    @media (min-width: 720px) { .grid-2 { grid-template-columns: 1.4fr 1fr; } }
+    .pill { display:inline-block; padding:0.25rem 0.6rem; border-radius:999px; border:1px solid #3b4a6a; font-size:0.75rem; margin-right:0.4rem; margin-bottom:0.3rem; }
+    .small { font-size:0.85rem; opacity:0.85; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;">
+      <div>
+        <h1 style="margin:0;">Multimodal Security Assistant</h1>
+        <p class="small" style="margin:0.25rem 0 0;">Fusing text, logs, and images/screenshots for richer incident response.</p>
+      </div>
+      <nav>
+        <a href="index.html">← Back to Playbook</a>
+        <a href="phishing-detection.html">Phishing</a>
+        <a href="soc-alert-triage.html">SOC Triage</a>
+        <a href="llm-fine-tuning.html">LLM Fine-Tuning</a>
+        <a href="quantum-anomaly.html">Quantum</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+    <section class="grid grid-2">
+      <div class="card">
+        <div class="section-label">Project Goal</div>
+        <h2>Vision-Language for Security Workflows</h2>
+        <p>
+          Explore a multimodal assistant that can reason over logs, text descriptions, and screenshots
+          (e.g., phishing emails, admin consoles, SIEM dashboards) to support incident response.
+        </p>
+        <p>
+          Inspired by LLaVA-style vision-language models, this project focuses on input fusion challenges
+          and how multimodal context can reduce ambiguity in security investigations.
+        </p>
+      </div>
+<div class="card">
+        <div class="section-label">Tech Stack</div>
+        <h3>Stack & Models</h3>
+        <p>
+          <span class="pill">Python</span>
+          <span class="pill">Vision-Language Models (VLMs)</span>
+          <span class="pill">LLaVA-style architectures</span>
+          <span class="pill">CLIP / Image Encoders</span>
+          <span class="pill">Transformers</span>
+          <span class="pill">Diffusion Models (synthetic data)</span>
+          <span class="pill">Streamlit / Gradio</span>
+        </p>
+      </div>
+    </section>
+<section class="card">
+      <div class="section-label">Approach</div>
+      <h2>Input Fusion & Synthetic Data</h2>
+      <ul>
+        <li><strong>Input Fusion:</strong> Combine log snippets, textual descriptions, and screenshots into a unified representation.</li>
+        <li><strong>Vision-Language:</strong> Use pre-trained VLMs to encode screenshots and fuse with text embeddings.</li>
+        <li><strong>Diffusion Models:</strong> Generate synthetic security screenshots (e.g., fake admin panels, alerts) to augment scarce data.</li>
+        <li><strong>Tasks:</strong> Explain what is happening in a screenshot, highlight suspicious UI elements, and correlate with logs.</li>
+      </ul>
+    </section>
+<section class="grid grid-2">
+      <div class="card">
+        <div class="section-label">Challenges</div>
+        <h2>Nuances & Limitations</h2>
+        <ul>
+          <li>Aligning visual and textual context without overfitting to specific tools or vendors.</li>
+          <li>Ensuring screenshots are properly anonymized and free of sensitive data.</li>
+          <li>Latency and GPU requirements for real-time multimodal inference.</li>
+        </ul>
+      </div>
+<div class="card">
+        <div class="section-label">Future Work</div>
+        <h3>Next Steps</h3>
+        <ul>
+          <li>Integrate with SOC triage assistant as a multimodal extension.</li>
+          <li>Evaluate with real analysts on usability and trust.</li>
+          <li>Explore lightweight on-device models for sensitive environments.</li>
+        </ul>
+      </div>
+    </section>
+<section class="card">
+      <div class="section-label">Reflection</div>
+      <h2>What I Learned</h2>
+      <p>
+        Multimodal AI is promising for security, but data governance and privacy are even more critical when
+        images and UI screenshots are involved. The main insight is that multimodal context can clarify ambiguous
+        alerts, but only when carefully curated and aligned with human workflows.
+      </p>
+    </section>
+  </main>
+<footer>
+    <div style="max-width:1000px;margin:0 auto;" class="small">
+      <a href="index.html">← Back to Playbook Home</a> · Multimodal Security Assistant.
+    </div>
+  </footer>
+</body>
+</html>
+
