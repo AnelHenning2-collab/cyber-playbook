@@ -1,4 +1,0 @@
-model:
-  type: rag_triage_assistant
-  version: 0.1
-  description: "Heuristic RAG-style SOC alert triage assistant"
