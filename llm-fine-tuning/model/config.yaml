@@ -1,0 +1,4 @@
+model:
+  type: lora_fine_tuned_llm
+  version: 0.1
+  description: "Placeholder LoRA fine-tuning pipeline for cybersecurity tasks"
