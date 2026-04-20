@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cyber AI Project Playbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; line-height: 1.6; background:#0b1020; color:#f5f5f5; }
+    header, footer { background:#050814; padding:1.5rem 2rem; }
+    main { padding:2rem; max-width: 1000px; margin: 0 auto; }
+    h1, h2, h3 { color:#fdfdfd; }
+    a { color:#7fd0ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    .tagline { font-size:0.95rem; opacity:0.9; }
+    .pill { display:inline-block; padding:0.25rem 0.6rem; border-radius:999px; border:1px solid #3b4a6a; font-size:0.75rem; margin-right:0.4rem; margin-bottom:0.3rem; }
+    .grid { display:grid; gap:1.5rem; }
+    @media (min-width: 720px) { .grid-2 { grid-template-columns: 1.4fr 1fr; } .grid-3 { grid-template-columns: repeat(3, minmax(0,1fr)); } }
+    .card { background:#111729; border-radius:0.75rem; padding:1.25rem 1.5rem; border:1px solid #1f2937; }
+    .badge-row img { margin-right:0.4rem; margin-bottom:0.4rem; }
+    .project-list li { margin-bottom:0.4rem; }
+    .small { font-size:0.85rem; opacity:0.85; }
+    .section-label { font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:#9ca3af; margin-bottom:0.25rem; }
+    .updated { font-size:0.8rem; color:#9ca3af; margin-top:0.5rem; }
+    nav a { margin-right:1rem; font-size:0.9rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <div style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;">
+      <div>
+        <h1 style="margin:0;">Cyber AI Project Playbook</h1>
+        <p class="tagline">Cybersecurity Analyst | Machine Learning for Security | Quantum Computing Explorer — Margate, Florida, USA</p>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="phishing-detection.html">Phishing</a>
+        <a href="soc-alert-triage.html">SOC Triage</a>
+        <a href="llm-fine-tuning.html">LLM Fine-Tuning</a>
+        <a href="multimodal-security.html">Multimodal</a>
+        <a href="quantum-anomaly.html">Quantum</a>
+      </nav>
+    </div>
+  </header>
+
+<main>
+    <section class="grid grid-2" style="margin-bottom:2rem;">
+      <div class="card">
+        <div class="section-label">Overview</div>
+        <h2>Why This Playbook Exists</h2>
+        <p>
+          As a Cybersecurity Analyst, I focus on turning real SOC pain points into secure, scalable AI solutions.
+          This repo demonstrates how I build advanced AI workflows using prompt engineering, Retrieval-Augmented
+          Generation (RAG), LLM fine-tuning, multimodal AI, and exploratory diffusion models.
+        </p>
+        <p>
+          Every project emphasizes responsible AI: bias mitigation, explainability, adversarial robustness,
+          GDPR/HIPAA compliance, and deployment readiness with Docker, Kubernetes, AWS SageMaker,
+          Google Vertex AI, and Azure ML.
+        </p>
+        <p><strong>Key themes across projects:</strong></p>
+        <ul>
+          <li>End-to-end model-to-product development (data → training → evaluation → secure inference → monitoring)</li>
+          <li>Handling real-world challenges: imbalanced data, noisy logs, evolving threats, edge deployment</li>
+          <li>Measurable security impact: reduced triage time, lower false positives, auditable decisions</li>
+        </ul>
+      </div>
+
+<div class="card">
+        <div class="section-label">Tech Focus</div>
+        <h3>Core Technologies & Platforms</h3>
+        <div class="badge-row">
+          <img src="https://img.shields.io/badge/Python-3.11-blue" alt="Python" />
+          <img src="https://img.shields.io/badge/Scikit--learn-ML-orange" alt="Scikit-learn" />
+          <img src="https://img.shields.io/badge/Hugging%20Face-Transformers-yellow" alt="HF" />
+          <img src="https://img.shields.io/badge/Docker-Production%20Ready-2496ED" alt="Docker" />
+          <img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5" alt="Kubernetes" />
+          <img src="https://img.shields.io/badge/AWS-SageMaker-FF9900" alt="SageMaker" />
+          <img src="https://img.shields.io/badge/Google-Vertex%20AI-4285F4" alt="Vertex AI" />
+          <img src="https://img.shields.io/badge/Azure-ML-0078D4" alt="Azure ML" />
+        </div>
+        <p class="small">
+          Built to showcase end-to-end AI ownership in cybersecurity. All projects include Docker/Kubernetes deployment
+          examples, cloud MLOps patterns, and privacy considerations for regulated environments.
+        </p>
+      </div>
+    </section>
+<section class="card" style="margin-bottom:2rem;">
+      <div class="section-label">Featured Project Guides</div>
+      <h2>Project Playbook Index</h2>
+      <ol class="project-list">
+        <li>
+          <strong><a href="phishing-detection.html">Phishing Detection Classifier</a></strong> —
+          Classic ML + explainable features for email/URL threat detection.
+        </li>
+        <li>
+          <strong><a href="soc-alert-triage.html">SOC Alert Triage Assistant</a></strong> —
+          RAG-powered assistant for faster, context-aware alert prioritization.
+        </li>
+        <li>
+          <strong><a href="llm-fine-tuning.html">LLM Fine-Tuning Demo for Security</a></strong> —
+          Domain-adapted LLMs using PEFT/LoRA for incident summarization.
+        </li>
+        <li>
+          <strong><a href="multimodal-security.html">Multimodal Security Assistant</a></strong> —
+          Fusing text, logs, and images/screenshots for richer incident response.
+        </li>
+        <li>
+          <strong><a href="quantum-anomaly.html">Quantum-Inspired Anomaly Detection</a></strong> —
+          Comparing classical vs. quantum/hybrid methods for high-dimensional threats.
+        </li>
+      </ol>
+    </section>
+
+<section class="grid grid-2" style="margin-bottom:2rem;">
+      <div class="card">
+        <div class="section-label">Portfolio Strategy</div>
+        <h2>Recommended Pinning Order</h2>
+        <ol>
+          <li>Phishing Detection Classifier (grounded in core cyber ML)</li>
+          <li>SOC Alert Triage Assistant (practical RAG application)</li>
+          <li>LLM Fine-Tuning Demo (advanced generative AI)</li>
+          <li>Multimodal Security Assistant (emerging multimodal workflows)</li>
+          <li>Quantum-Inspired Anomaly Detection (forward-looking exploration)</li>
+        </ol>
+        <p class="small">
+          This playbook is designed as a recruiter-friendly, browsable portfolio: each project page links to
+          code, architecture, metrics, and responsible AI considerations.
+        </p>
+      </div>
+<div class="card">
+        <div class="section-label">Datasets & Learning</div>
+        <h3>Kaggle & Learning Resources</h3>
+        <ul>
+          <li>SS Hacker Team Cybersecurity GLOBAL Challenge 2026 (phishing domain detection)</li>
+          <li>Malicious URL Detection Dataset (Enhanced 2026)</li>
+          <li>Phishing and Legitimate Emails Dataset (2026)</li>
+          <li>Anomaly Detection Challenges and Cybersecurity Incidents datasets</li>
+          <li>Incident Response Playbook Dataset for SOC workflows</li>
+        </ul>
+        <p class="small">
+          These datasets help benchmark models against imbalanced, noisy real-world security data and validate
+          robustness under realistic constraints.
+        </p>
+      </div>
+    </section>
+<section class="card">
+      <div class="section-label">Implementation Notes</div>
+      <h2>Using This Playbook</h2>
+      <ul>
+        <li>Each project page includes: problem framing, architecture, stack, metrics, and “What I learned”.</li>
+        <li>GitHub Pages–ready: simply deploy this repo as a static site.</li>
+        <li>Architecture diagrams can be rendered with Mermaid.js and screenshots in <code>assets/</code>.</li>
+      </ul>
+      <p class="updated">
+        Last updated: April 2026 | Connect: [Your LinkedIn] | GitHub: [yourusername]
+      </p>
+    </section>
+  </main>
+
+<footer>
+    <div style="max-width:1000px;margin:0 auto;" class="small">
+      Cyber AI Project Playbook · Static portfolio for production-grade AI in cybersecurity.
+    </div>
+  </footer>
+</body>
+</html>
