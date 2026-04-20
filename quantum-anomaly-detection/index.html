@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Quantum-Inspired Anomaly Detection | Cyber AI Project Playbook</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; padding: 0; line-height: 1.6; background:#0b1020; color:#f5f5f5; }
+    header, footer { background:#050814; padding:1.5rem 2rem; }
+    main { padding:2rem; max-width: 1000px; margin: 0 auto; }
+    h1, h2, h3 { color:#fdfdfd; }
+    a { color:#7fd0ff; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+    nav a { margin-right:1rem; font-size:0.9rem; }
+    .section-label { font-size:0.8rem; text-transform:uppercase; letter-spacing:0.08em; color:#9ca3af; margin-bottom:0.25rem; }
+    .card { background:#111729; border-radius:0.75rem; padding:1.25rem 1.5rem; border:1px solid #1f2937; margin-bottom:1.5rem; }
+    .grid { display:grid; gap:1.5rem; }
+    @media (min-width: 720px) { .grid-2 { grid-template-columns: 1.4fr 1fr; } }
+    .pill { display:inline-block; padding:0.25rem 0.6rem; border-radius:999px; border:1px solid #3b4a6a; font-size:0.75rem; margin-right:0.4rem; margin-bottom:0.3rem; }
+    .small { font-size:0.85rem; opacity:0.85; }
+    pre { background:#020617; padding:0.75rem 1rem; border-radius:0.5rem; overflow-x:auto; font-size:0.85rem; }
+    code { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+    img.diagram { max-width:100%; border-radius:0.5rem; border:1px solid #1f2937; margin-top:0.5rem; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div style="max-width:1000px;margin:0 auto;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:0.75rem;">
+      <div>
+        <h1 style="margin:0;">Quantum-Inspired Anomaly Detection</h1>
+        <p class="small" style="margin:0.25rem 0 0;">Hybrid quantum–classical anomaly detection for rare-event cybersecurity.</p>
+      </div>
+      <nav>
+        <a href="../index.html">← Back to Playbook</a>
+        <a href="../phishing-detection/index.html">Phishing</a>
+        <a href="../soc-alert-triage/index.html">SOC Triage</a>
+        <a href="../multimodal-security/index.html">Multimodal</a>
+        <a href="../llm-fine-tuning/index.html">LLM Fine-Tuning</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="grid grid-2">
+      <div class="card">
+        <div class="section-label">Project Goal</div>
+        <h2>Detect Rare, High-Impact Threats</h2>
+        <p>
+          Quantum kernel methods can capture subtle, high-dimensional patterns that classical models miss.
+          This project explores quantum-inspired anomaly detection for SOC logs, network telemetry, and
+          rare-event threat signals.
+        </p>
+        <p><strong>Simulated Impact:</strong> Improved detection of low-frequency, high-severity anomalies.</p>
+      </div>
+
+      <div class="card">
+        <div class="section-label">Tech Stack</div>
+        <h3>Stack & Tools</h3>
+        <p>
+          <span class="pill">Python</span>
+          <span class="pill">Qiskit</span>
+          <span class="pill">scikit-learn</span>
+          <span class="pill">NumPy</span>
+          <span class="pill">FastAPI</span>
+          <span class="pill">Streamlit</span>
+        </p>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="section-label">Architecture</div>
+      <h2>Hybrid Quantum–Classical Workflow</h2>
+      <p>
+        The model uses quantum kernels to map data into a high-dimensional Hilbert space, enabling
+        separation of subtle anomalies.
+      </p>
+
+      <pre><code># Pseudo-code for quantum anomaly detection
+from qiskit_machine_learning.kernels import QuantumKernel
+from sklearn.svm import OneClassSVM
+
+quantum_kernel = QuantumKernel(feature_map=my_feature_map)
+kernel_matrix = quantum_kernel.evaluate(X_train)
+
+model = OneClassSVM(kernel="precomputed").fit(kernel_matrix)
+      </code></pre>
+    </section>
+
+    <section class="card">
+      <div class="section-label">Run the App</div>
+      <h2>Local Execution</h2>
+      <p>Inside <code>quantum-anomaly/app/</code>:</p>
+
+      <pre><code>pip install -r requirements.txt
+
+# Terminal 1 – API
+uvicorn api:app --reload --port 8003
+
+# Terminal 2 – UI
+streamlit run main.py
+      </code></pre>
+    </section>
+
+  </main>
+
+  <footer>
+    <div style="max-width:1000px;margin:0 auto;" class="small">
+      <a href="../index.html">← Back to Playbook Home</a> · Quantum-Inspired Anomaly Detection
+    </div>
+  </footer>
+</body>
+</html>
