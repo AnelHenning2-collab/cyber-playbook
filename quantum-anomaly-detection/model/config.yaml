@@ -1,0 +1,4 @@
+model:
+  type: quantum_kernel_svm
+  version: 0.1
+  description: "Quantum-inspired anomaly detection model"
