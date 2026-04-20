@@ -1,1 +1,114 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOC Alert Triage Assistant</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #0d1117;
+            color: #e6edf3;
+        }
+
+        header {
+            background: #161b22;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #30363d;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #58a6ff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #79c0ff;
+            margin-top: 30px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 20px;
+            background: #238636;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #2ea043;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>SOC Alert Triage Assistant</h1>
+</header>
+
+<div class="container">
+
+    <h2>Overview</h2>
+    <p>
+        The SOC Alert Triage Assistant helps analysts summarize alerts, extract key indicators, 
+        and generate recommended actions using a lightweight retrieval‑augmented workflow.
+    </p>
+
+    <h2>Features</h2>
+    <ul>
+        <li>Summarizes long or noisy alerts</li>
+        <li>Extracts IOCs and relevant metadata</li>
+        <li>Generates recommended next steps</li>
+        <li>Uses a simple RAG‑style retrieval pipeline</li>
+    </ul>
+
+    <h2>Run the App</h2>
+    <p>Start the backend and UI locally:</p>
+
+    <pre>
+uvicorn api:app --reload --port 8004
+streamlit run main.py
+    </pre>
+
+    <a class="button" href="https://github.com/AnelHenning2-collab/cyber-playbook" target="_blank">
+        View Project on GitHub
+    </a>
+
+</div>
+
+<footer>
+    © 2026 · Cyber AI Project Playbook · Anel Henning
+</footer>
+
+</body>
+</html>
