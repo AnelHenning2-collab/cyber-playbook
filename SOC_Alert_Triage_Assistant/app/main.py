@@ -1,24 +1,21 @@
 import streamlit as st
 import requests
 
-API_URL = "http://localhost:8000/triage"
+API_URL = "http://localhost:8004/triage"
 
 st.title("SOC Alert Triage Assistant")
 
-alert_id = st.text_input("Alert ID")
-description = st.text_area("Alert description")
-severity = st.selectbox("Severity", ["low", "medium", "high", "critical"])
+alert_text = st.text_area("Paste alert text")
 
-if st.button("Run triage"):
-    payload = {
-        "alert_id": alert_id or "ALERT-001",
-        "description": description,
-        "severity": severity,
-    }
-    resp = requests.post(API_URL, json=payload)
+if st.button("Analyze Alert"):
+    resp = requests.post(API_URL, json={"alert_text": alert_text})
     data = resp.json()
+
     st.subheader("Summary")
     st.write(data["summary"])
-    st.subheader("Recommendation")
-    st.write(data["recommendation"])
-    st.caption(f"Confidence: {data['confidence']}")
+
+    st.subheader("Recommended Actions")
+    st.write(data["recommended_actions"])
+
+    st.subheader("Confidence Score")
+    st.write(f"{data['confidence']:.2f}")
