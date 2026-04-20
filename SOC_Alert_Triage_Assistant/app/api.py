@@ -1,20 +1,17 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
+from model.inference import triage_alert
 
 app = FastAPI(title="SOC Alert Triage API")
 
 class Alert(BaseModel):
-    alert_id: str
-    description: str
-    severity: str
+    alert_text: str
 
 @app.post("/triage")
-def triage_alert(alert: Alert):
-    # TODO: plug in real RAG + vector DB
-    recommendation = f"Prioritize alert {alert.alert_id} with severity {alert.severity}."
+def triage(alert: Alert):
+    summary, actions, score = triage_alert(alert.alert_text)
     return {
-        "summary": f"Synthetic summary for: {alert.description[:120]}...",
-        "recommendation": recommendation,
-        "confidence": 0.82,
-        "citations": []
+        "summary": summary,
+        "recommended_actions": actions,
+        "confidence": score
     }
