@@ -1,0 +1,15 @@
+cd cyber-playbook/phishing-detection/app
+pip install -r requirements.txt
+
+# Terminal 1 – API
+uvicorn api:app --reload --port 8001
+
+# Terminal 2 – UI
+streamlit run main.py
+
+  <li><a href="phishing-detection/index.html">Phishing Detection Demo</a></li>
+
+Then in cyber-playbook/phishing-detection/index.html, describe:
+- what the app does
+- how to run it (the commands above)
+- link to app/, model/, notebooks/, docs/.
