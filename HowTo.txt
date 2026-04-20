@@ -1,0 +1,11 @@
+cd project-name/app
+pip install -r requirements.txt
+uvicorn api:app --reload --port XXXX
+streamlit run main.py
+
+Project > Port
+Phishing Detection > 8001
+Multimodal Security > 8002
+Quantum Anomaly > 8003
+SOC Alert Triage > 8004
+LLM Fine_Tuning > 8005
