@@ -1,8 +1,8 @@
 # Cyber AI Project Playbook
 Static GitHub Pages site showcasing end-to-end, production-oriented AI projects for cybersecurity.
 ## Live Site
-Once GitHub Pages is enabled:
-- **URL:** `https://yourusername.github.io/cyber-ai-project-playbook/`
+Live on GitHub Pages:
+- **URL:** https://anelhenning2-collab.github.io/cyber-playbook/
 ## Pages
 - [`index.html`](index.html) — Main playbook landing page.
 - [`phishing-detection.html`](phishing-detection.html) — Phishing Detection Classifier.
